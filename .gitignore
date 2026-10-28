@@ -1,0 +1,15 @@
+# Secrets: never commit these
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+
+# Tooling
+node_modules/
+.wrangler/
+.DS_Store
+*.log
+
+# Static build output (published to the gh-pages branch)
+dist/

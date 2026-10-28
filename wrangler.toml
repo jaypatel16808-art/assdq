@@ -1,0 +1,18 @@
+# Cloudflare Pages project configuration.
+# Secrets are NOT stored here. Set them with `npx wrangler pages secret put NAME`
+# or in the dashboard (Settings → Environment variables). See README.md.
+name = "vernon-auto-repair"
+pages_build_output_dir = "public"
+compatibility_date = "2026-06-01"
+
+# Non-secret settings
+[vars]
+RATE_LIMIT_MAX = "5"
+RATE_LIMIT_WINDOW_SECONDS = "3600"
+
+# Rate-limit counters. Create the namespace with:
+#   npx wrangler kv namespace create RATE_LIMIT
+# then paste the id it prints below.
+[[kv_namespaces]]
+binding = "RATE_LIMIT"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"

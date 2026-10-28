@@ -54,6 +54,10 @@ function transformHtml(html) {
     'With your OK, we’ll also count visits with privacy-friendly analytics and load Google Maps.',
     'With your OK, we’ll also load Google Maps.',
   );
+  html = html.replace(
+    'We use essential cookies to keep this site and the callback form working.',
+    'We use one essential cookie to remember your choice.',
+  );
   return html;
 }
 

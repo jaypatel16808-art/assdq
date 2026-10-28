@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://jaypatel16808-art.github.io/assdq/sitemap.xml
